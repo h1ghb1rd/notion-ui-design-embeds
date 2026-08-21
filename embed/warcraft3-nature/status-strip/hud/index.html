@@ -6,7 +6,13 @@
   <meta name="theme-color" content="transparent">
   <title>Status HUD</title>
 </head>
-<body data-theme="warcraft3-nature" data-component-id="status-strip/hud" data-recommended-height="64">
+<body
+  data-theme="warcraft3-nature"
+  data-component-id="status-strip/hud"
+  data-component-category="status-strip"
+  data-artwork-height="64"
+  data-recommended-height="100"
+>
 <!-- Generated from src/themes/warcraft3-nature/fragments/status-strip/hud.html. Edit source files, then run npm run build. -->
 <style>
 :root { color-scheme: dark; }
@@ -380,12 +386,15 @@ body { padding: 0; }
 </script>
 <style data-ui-hosted-shell>
   :root {
+    --ui-artwork-height: 64px;
     color-scheme: normal !important;
     background: transparent !important;
   }
 
   html,
   body {
+    display: grid;
+    align-items: center;
     inline-size: 100%;
     block-size: 100%;
     min-inline-size: 0;
@@ -398,18 +407,26 @@ body { padding: 0; }
 
   body > .ui-component {
     inline-size: 100%;
-    block-size: 100vh;
-    min-block-size: 100vh;
+    block-size: min(100vh, var(--ui-artwork-height));
+    min-block-size: 0;
     max-block-size: 100vh;
   }
 
   body > .ui-panel-cap {
-    --panel-cap-height: 100vh !important;
+    --panel-cap-height: min(100vh, var(--ui-artwork-height)) !important;
   }
 
   body > .ui-divider,
   body > .ui-status-strip {
-    min-block-size: 100vh !important;
+    min-block-size: min(100vh, var(--ui-artwork-height)) !important;
+  }
+
+  body[data-component-category="panel-header"] {
+    align-items: end;
+  }
+
+  body[data-component-category="panel-footer"] {
+    align-items: start;
   }
 </style>
 </body>

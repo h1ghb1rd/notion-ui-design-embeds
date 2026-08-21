@@ -1,5 +1,5 @@
 {
-  "generatedFrom": "05c2f07d5f23759278eccf5b98d9782c5f371ef8",
+  "generatedFrom": "1b0fee2ac9e986235c2d60460926402f0e5f5ef6",
   "theme": "warcraft3-nature",
   "components": [
     {
@@ -9,7 +9,8 @@
       "variant": "restrained",
       "mode": "title",
       "route": "/embed/warcraft3-nature/panel-header/restrained-title/",
-      "recommendedHeight": 68,
+      "artworkHeight": 68,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -19,7 +20,8 @@
       "variant": "restrained",
       "mode": "ornament",
       "route": "/embed/warcraft3-nature/panel-header/restrained-ornament/",
-      "recommendedHeight": 68,
+      "artworkHeight": 68,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -29,7 +31,8 @@
       "variant": "carved",
       "mode": "title",
       "route": "/embed/warcraft3-nature/panel-header/carved-title/",
-      "recommendedHeight": 88,
+      "artworkHeight": 88,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -39,7 +42,8 @@
       "variant": "carved",
       "mode": "ornament",
       "route": "/embed/warcraft3-nature/panel-header/carved-ornament/",
-      "recommendedHeight": 88,
+      "artworkHeight": 88,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -49,7 +53,8 @@
       "variant": "minimal",
       "mode": "title",
       "route": "/embed/warcraft3-nature/panel-header/minimal-title/",
-      "recommendedHeight": 48,
+      "artworkHeight": 48,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -59,7 +64,8 @@
       "variant": "minimal",
       "mode": "ornament",
       "route": "/embed/warcraft3-nature/panel-header/minimal-ornament/",
-      "recommendedHeight": 48,
+      "artworkHeight": 48,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -68,7 +74,8 @@
       "category": "panel-footer",
       "variant": "restrained",
       "route": "/embed/warcraft3-nature/panel-footer/restrained/",
-      "recommendedHeight": 44,
+      "artworkHeight": 44,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -77,7 +84,8 @@
       "category": "panel-footer",
       "variant": "carved",
       "route": "/embed/warcraft3-nature/panel-footer/carved/",
-      "recommendedHeight": 56,
+      "artworkHeight": 56,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -86,7 +94,8 @@
       "category": "panel-footer",
       "variant": "minimal",
       "route": "/embed/warcraft3-nature/panel-footer/minimal/",
-      "recommendedHeight": 24,
+      "artworkHeight": 24,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -95,7 +104,8 @@
       "category": "divider",
       "variant": "major",
       "route": "/embed/warcraft3-nature/divider/major/",
-      "recommendedHeight": 60,
+      "artworkHeight": 60,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -104,7 +114,8 @@
       "category": "divider",
       "variant": "minor",
       "route": "/embed/warcraft3-nature/divider/minor/",
-      "recommendedHeight": 32,
+      "artworkHeight": 32,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -113,7 +124,8 @@
       "category": "divider",
       "variant": "micro",
       "route": "/embed/warcraft3-nature/divider/micro/",
-      "recommendedHeight": 16,
+      "artworkHeight": 16,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     },
     {
@@ -122,7 +134,8 @@
       "category": "status-strip",
       "variant": "hud",
       "route": "/embed/warcraft3-nature/status-strip/hud/",
-      "recommendedHeight": 64,
+      "artworkHeight": 64,
+      "recommendedHeight": 100,
       "theme": "warcraft3-nature"
     }
   ]
