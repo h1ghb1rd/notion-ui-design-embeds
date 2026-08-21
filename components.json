@@ -1,0 +1,129 @@
+{
+  "generatedFrom": "05c2f07d5f23759278eccf5b98d9782c5f371ef8",
+  "theme": "warcraft3-nature",
+  "components": [
+    {
+      "id": "panel-header/restrained-title",
+      "title": "Restrained nature title header",
+      "category": "panel-header",
+      "variant": "restrained",
+      "mode": "title",
+      "route": "/embed/warcraft3-nature/panel-header/restrained-title/",
+      "recommendedHeight": 68,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "panel-header/restrained-ornament",
+      "title": "Restrained nature ornament header",
+      "category": "panel-header",
+      "variant": "restrained",
+      "mode": "ornament",
+      "route": "/embed/warcraft3-nature/panel-header/restrained-ornament/",
+      "recommendedHeight": 68,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "panel-header/carved-title",
+      "title": "Carved frame title header",
+      "category": "panel-header",
+      "variant": "carved",
+      "mode": "title",
+      "route": "/embed/warcraft3-nature/panel-header/carved-title/",
+      "recommendedHeight": 88,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "panel-header/carved-ornament",
+      "title": "Carved frame ornament header",
+      "category": "panel-header",
+      "variant": "carved",
+      "mode": "ornament",
+      "route": "/embed/warcraft3-nature/panel-header/carved-ornament/",
+      "recommendedHeight": 88,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "panel-header/minimal-title",
+      "title": "Minimal trim title header",
+      "category": "panel-header",
+      "variant": "minimal",
+      "mode": "title",
+      "route": "/embed/warcraft3-nature/panel-header/minimal-title/",
+      "recommendedHeight": 48,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "panel-header/minimal-ornament",
+      "title": "Minimal trim ornament header",
+      "category": "panel-header",
+      "variant": "minimal",
+      "mode": "ornament",
+      "route": "/embed/warcraft3-nature/panel-header/minimal-ornament/",
+      "recommendedHeight": 48,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "panel-footer/restrained",
+      "title": "Restrained nature footer",
+      "category": "panel-footer",
+      "variant": "restrained",
+      "route": "/embed/warcraft3-nature/panel-footer/restrained/",
+      "recommendedHeight": 44,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "panel-footer/carved",
+      "title": "Carved frame footer",
+      "category": "panel-footer",
+      "variant": "carved",
+      "route": "/embed/warcraft3-nature/panel-footer/carved/",
+      "recommendedHeight": 56,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "panel-footer/minimal",
+      "title": "Minimal trim footer",
+      "category": "panel-footer",
+      "variant": "minimal",
+      "route": "/embed/warcraft3-nature/panel-footer/minimal/",
+      "recommendedHeight": 24,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "divider/major",
+      "title": "Major divider",
+      "category": "divider",
+      "variant": "major",
+      "route": "/embed/warcraft3-nature/divider/major/",
+      "recommendedHeight": 60,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "divider/minor",
+      "title": "Minor divider",
+      "category": "divider",
+      "variant": "minor",
+      "route": "/embed/warcraft3-nature/divider/minor/",
+      "recommendedHeight": 32,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "divider/micro",
+      "title": "Micro divider",
+      "category": "divider",
+      "variant": "micro",
+      "route": "/embed/warcraft3-nature/divider/micro/",
+      "recommendedHeight": 16,
+      "theme": "warcraft3-nature"
+    },
+    {
+      "id": "status-strip/hud",
+      "title": "Status HUD",
+      "category": "status-strip",
+      "variant": "hud",
+      "route": "/embed/warcraft3-nature/status-strip/hud/",
+      "recommendedHeight": 64,
+      "theme": "warcraft3-nature"
+    }
+  ]
+}

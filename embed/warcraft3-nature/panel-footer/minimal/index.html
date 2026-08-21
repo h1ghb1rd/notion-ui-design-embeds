@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en" data-ui-hosted-embed>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="transparent">
+  <title>Minimal trim footer</title>
+</head>
+<body data-theme="warcraft3-nature" data-component-id="panel-footer/minimal" data-recommended-height="24">
+<!-- Generated from src/themes/warcraft3-nature/fragments/panel-footer/minimal.html. Edit source files, then run npm run build. -->
+<style>
+:root { color-scheme: dark; }
+html, body { margin: 0; min-width: 0; background: transparent; overflow-x: hidden; }
+body { padding: 0; }
+:where(.ui-component) {
+  box-sizing: border-box;
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 100%;
+  color: var(--ui-text, currentColor);
+  font-family: var(--ui-font, ui-serif, Georgia, serif);
+  line-height: 1.2;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+:where(.ui-component),
+:where(.ui-component) *,
+:where(.ui-component) *::before,
+:where(.ui-component) *::after {
+  box-sizing: border-box;
+}
+
+:where(.ui-component svg) {
+  display: block;
+  max-inline-size: 100%;
+}
+
+:where(.ui-component [aria-hidden="true"]) {
+  pointer-events: none;
+  user-select: none;
+}
+
+.ui-sr-only {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
+:where(.ui-component) {
+  container-type: inline-size;
+}
+
+.ui-mobile-only {
+  display: none;
+}
+
+@container (max-width: 420px) {
+  .ui-desktop-ornament {
+    display: none !important;
+  }
+
+  .ui-mobile-only {
+    display: block;
+  }
+}
+
+@supports not (container-type: inline-size) {
+  @media (max-width: 520px) {
+    .ui-desktop-ornament {
+      display: none !important;
+    }
+
+    .ui-mobile-only {
+      display: block;
+    }
+  }
+}
+
+
+
+:where(.ui-component) {
+  --ui-motion-enabled: 1;
+}
+
+:where(.ui-component[data-motion="off"]) *,
+:where(.ui-component[data-motion="off"]) *::before,
+:where(.ui-component[data-motion="off"]) *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.ui-component) *,
+  :where(.ui-component) *::before,
+  :where(.ui-component) *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+
+.theme-warcraft3-nature {
+  color-scheme: dark;
+
+  /* Semantic UI surfaces */
+  --ui-bg: #171613;
+  --ui-panel: #35291f;
+  --ui-native-surface: #3c3028;
+  --ui-native-surface-edge: #5d4938;
+  --ui-border-dark: #17110d;
+  --ui-border-mid: #493326;
+  --ui-border-light: #8a6742;
+  --ui-accent: #829649;
+  --ui-accent-muted: #4e6034;
+  --ui-metal: #977343;
+  --ui-metal-light: #c09a5b;
+  --ui-stone: #626052;
+  --ui-stone-dark: #292a24;
+  --ui-moss: #566238;
+  --ui-shadow: rgba(9, 7, 5, 0.78);
+  --ui-highlight: rgba(223, 193, 126, 0.32);
+  --ui-text: #e6ddc5;
+  --ui-text-muted: #b9ad90;
+
+  /* Shape and ornament controls */
+  --ui-radius: 0.2rem;
+  --ui-bevel-size: 3px;
+  --ui-ornament-opacity: 0.92;
+  --ui-leaf-density: 1;
+  --ui-seam-depth: 0.6rem;
+  --ui-shadow-strength: 0.7;
+
+  --ui-font: Georgia, "Times New Roman", serif;
+  --ui-display-font: Georgia, "Times New Roman", serif;
+}
+
+
+
+.theme-warcraft3-nature {
+  --wc3-wood-grain:
+    radial-gradient(ellipse at 12% 40%, rgba(217, 173, 96, 0.1) 0 1px, transparent 2px),
+    radial-gradient(ellipse at 78% 70%, rgba(10, 7, 4, 0.22) 0 1px, transparent 2px),
+    repeating-linear-gradient(97deg, transparent 0 17px, rgba(15, 9, 5, 0.11) 18px 19px, transparent 21px 34px),
+    linear-gradient(180deg, #60442e 0%, #3f2b20 47%, #2b1d17 100%);
+  --wc3-stone-grain:
+    radial-gradient(circle at 30% 35%, rgba(220, 211, 174, 0.14) 0 1px, transparent 2px),
+    radial-gradient(circle at 72% 68%, rgba(8, 9, 7, 0.2) 0 1px, transparent 2px),
+    linear-gradient(145deg, #747263, #44463c 52%, #282a25);
+}
+
+.theme-warcraft3-nature .wc3-svg-leaf {
+  fill: var(--ui-accent-muted);
+  stroke: #26301c;
+  stroke-width: 1.4;
+}
+
+.theme-warcraft3-nature .wc3-svg-leaf--lit {
+  fill: var(--ui-accent);
+  stroke: #35411f;
+}
+
+.theme-warcraft3-nature .wc3-svg-vein {
+  fill: none;
+  stroke: rgba(218, 208, 154, 0.42);
+  stroke-linecap: round;
+  stroke-width: 0.8;
+}
+
+.theme-warcraft3-nature .wc3-svg-root {
+  fill: none;
+  stroke: #765439;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-warcraft3-nature .wc3-svg-root-shadow {
+  fill: none;
+  stroke: #241711;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-warcraft3-nature .wc3-svg-metal {
+  fill: var(--ui-metal);
+  stroke: #382818;
+  stroke-width: 1.2;
+}
+
+.theme-warcraft3-nature .wc3-svg-stone {
+  fill: var(--ui-stone);
+  stroke: var(--ui-stone-dark);
+  stroke-width: 1.5;
+}
+
+
+
+.ui-panel-cap {
+  --panel-cap-height: clamp(2.5rem, 8cqi, 4.75rem);
+  position: relative;
+  min-block-size: var(--panel-cap-height);
+}
+
+.ui-panel-cap__surface {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(1.5rem, 1fr) auto minmax(1.5rem, 1fr);
+  align-items: center;
+  min-block-size: var(--panel-cap-height);
+  inline-size: 100%;
+}
+
+.ui-panel-cap__title {
+  position: relative;
+  z-index: 2;
+  max-inline-size: min(60cqi, 28rem);
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ui-panel-cap--ornament-only .ui-panel-cap__title {
+  inline-size: clamp(2.25rem, 12cqi, 5rem);
+  color: transparent;
+  user-select: none;
+}
+
+.ui-panel-cap__wing {
+  min-inline-size: 0;
+  overflow: hidden;
+}
+
+.ui-panel-cap__art {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  z-index: -1;
+}
+
+.ui-panel-cap--footer {
+  transform-origin: 50% 0;
+}
+
+@container (max-width: 420px) {
+  .ui-panel-cap__surface {
+    grid-template-columns: minmax(0.75rem, 1fr) auto minmax(0.75rem, 1fr);
+  }
+
+  .ui-panel-cap__title {
+    max-inline-size: 54cqi;
+  }
+}
+
+
+
+/* Shared seam behavior: these quiet inner edges visually meet a brown callout. */
+.theme-warcraft3-nature.ui-panel-cap--header {
+  padding-block-end: var(--ui-seam-depth);
+  filter: drop-shadow(0 0.35rem 0.28rem rgba(12, 8, 5, calc(0.28 * var(--ui-shadow-strength))));
+}
+
+.theme-warcraft3-nature.ui-panel-cap--header::after {
+  content: "";
+  position: absolute;
+  inset-inline: clamp(0.25rem, 1.5cqi, 0.85rem);
+  inset-block-end: 0;
+  block-size: var(--ui-seam-depth);
+  border-inline: 1px solid color-mix(in srgb, var(--ui-native-surface-edge) 78%, transparent);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--ui-native-surface) 88%, #1b120c), var(--ui-native-surface));
+}
+
+.theme-warcraft3-nature.ui-panel-cap--footer {
+  padding-block-start: calc(var(--ui-seam-depth) * 0.55);
+  filter: drop-shadow(0 0.45rem 0.4rem rgba(10, 7, 5, calc(0.4 * var(--ui-shadow-strength))));
+}
+
+.theme-warcraft3-nature.ui-panel-cap--footer::before {
+  content: "";
+  position: absolute;
+  inset-inline: clamp(0.25rem, 1.5cqi, 0.85rem);
+  inset-block-start: 0;
+  block-size: calc(var(--ui-seam-depth) * 0.55);
+  border-inline: 1px solid color-mix(in srgb, var(--ui-native-surface-edge) 78%, transparent);
+  background: var(--ui-native-surface);
+}
+
+.theme-warcraft3-nature .ui-panel-cap__title {
+  color: var(--ui-text);
+  font-family: var(--ui-display-font);
+  font-size: clamp(0.68rem, 2.2cqi, 1.05rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-shadow: 0 1px 0 #17100c, 0 0 0.65rem rgba(198, 174, 108, 0.13);
+}
+
+.theme-warcraft3-nature .ui-panel-cap__wing {
+  position: relative;
+  block-size: 100%;
+}
+
+/* Restrained nature ------------------------------------------------------ */
+.ui-wc3-panel--restrained {
+  --panel-cap-height: clamp(2.8rem, 8cqi, 4.25rem);
+}
+
+.ui-wc3-panel--restrained .ui-panel-cap__surface {
+  grid-template-columns: minmax(2.5rem, 1fr) auto minmax(2.5rem, 1fr);
+}
+
+.ui-wc3-panel--restrained .ui-panel-cap__wing::before,
+.ui-wc3-panel--restrained .ui-panel-cap__wing::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 53%;
+  block-size: 3px;
+  border-block: 1px solid #2b1b13;
+  background: linear-gradient(180deg, #906743, #493120 55%, #241711);
+  box-shadow: 0 -2px 0 rgba(112, 132, 66, 0.18), 0 3px 4px var(--ui-shadow);
+}
+
+.ui-wc3-panel--restrained .ui-panel-cap__wing::before {
+  inset-inline: clamp(1.2rem, 5cqi, 3.25rem) -0.2rem;
+}
+
+.ui-wc3-panel--restrained .ui-panel-cap__wing::after {
+  inset-inline: clamp(2rem, 11cqi, 7rem) 8%;
+  inset-block-start: 65%;
+  block-size: 1px;
+  background: #4f6437;
+  transform: rotate(-1deg);
+}
+
+.ui-wc3-panel--restrained .ui-panel-cap__wing--right::after {
+  transform: rotate(1deg);
+}
+
+.ui-wc3-panel--restrained .wc3-end-sprig {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 0;
+  inline-size: clamp(3.1rem, 12cqi, 7rem);
+  block-size: clamp(2.2rem, 7cqi, 3.7rem);
+  opacity: var(--ui-ornament-opacity);
+  transform: translateY(-50%);
+}
+
+.ui-wc3-panel--restrained .ui-panel-cap__wing--right .wc3-end-sprig {
+  inset-inline: auto 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.ui-wc3-panel--restrained .ui-panel-cap__title {
+  min-inline-size: clamp(4rem, 18cqi, 9rem);
+  padding: 0.7rem clamp(0.7rem, 2.6cqi, 1.5rem) 0.62rem;
+  border: 1px solid #1f1710;
+  border-block-start-color: #795b37;
+  clip-path: polygon(8% 14%, 20% 0, 80% 0, 92% 14%, 100% 50%, 88% 88%, 70% 94%, 50% 100%, 30% 94%, 12% 88%, 0 50%);
+  background: var(--wc3-wood-grain);
+  box-shadow: inset 0 2px 0 rgba(219, 180, 102, 0.18), inset 0 -3px 0 rgba(24, 14, 9, 0.58), 0 3px 5px var(--ui-shadow);
+}
+
+.ui-wc3-panel--restrained .ui-panel-cap__title::after {
+  content: "";
+  position: absolute;
+  inset: 0.32rem 15%;
+  border-block: 1px solid rgba(126, 151, 72, 0.38);
+  pointer-events: none;
+}
+
+.ui-wc3-panel--restrained.ui-panel-cap--ornament-only .ui-panel-cap__title {
+  min-inline-size: clamp(2.75rem, 8cqi, 4.2rem);
+  padding-inline: 0;
+}
+
+.ui-wc3-panel--restrained.ui-panel-cap--ornament-only .ui-panel-cap__title::before {
+  content: "";
+  position: absolute;
+  inset: 28%;
+  border: 2px solid var(--ui-accent-muted);
+  transform: rotate(45deg);
+  box-shadow: inset 0 0 0 2px #251a12, 0 0 0 1px #17100c;
+}
+
+.ui-wc3-panel--restrained.ui-panel-cap--footer {
+  --panel-cap-height: clamp(1.8rem, 5cqi, 2.7rem);
+}
+
+.ui-wc3-panel--restrained.ui-panel-cap--footer .ui-panel-cap__surface {
+  display: block;
+}
+
+.ui-wc3-panel--restrained .wc3-footer-roots {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+/* Carved frame ----------------------------------------------------------- */
+.ui-wc3-panel--carved {
+  --panel-cap-height: clamp(3.6rem, 10cqi, 5.5rem);
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__surface {
+  grid-template-columns: minmax(2.2rem, 1fr) auto minmax(2.2rem, 1fr);
+  margin-inline: clamp(0.12rem, 0.8cqi, 0.5rem);
+  inline-size: calc(100% - clamp(0.24rem, 1.6cqi, 1rem));
+  border-block: 2px solid #1c120d;
+  background: var(--wc3-wood-grain);
+  box-shadow:
+    inset 0 4px 0 rgba(194, 142, 75, 0.23),
+    inset 0 -5px 0 rgba(20, 12, 8, 0.64),
+    0 3px 0 #1b120c,
+    0 6px 9px var(--ui-shadow);
+  clip-path: polygon(0.8rem 0, calc(100% - 0.8rem) 0, 100% 28%, 98.7% 78%, calc(100% - 1.1rem) 100%, 1.1rem 100%, 1.3% 78%, 0 28%);
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__surface::before,
+.ui-wc3-panel--carved .ui-panel-cap__surface::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  inset-block: 18%;
+  inline-size: clamp(0.7rem, 2.2cqi, 1.2rem);
+  border: 1px solid #30200f;
+  background:
+    radial-gradient(circle, #d0a75d 0 12%, #78572f 14% 38%, #2a1b0e 40% 53%, transparent 55%),
+    linear-gradient(90deg, #432e1e, #795435 50%, #2a1b13);
+  box-shadow: inset 0 1px 0 rgba(239, 207, 137, 0.28), 0 2px 3px #160e09;
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__surface::before {
+  inset-inline-start: 1.2%;
+  clip-path: polygon(0 12%, 72% 0, 100% 50%, 72% 100%, 0 88%);
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__surface::after {
+  inset-inline-end: 1.2%;
+  clip-path: polygon(100% 12%, 28% 0, 0 50%, 28% 100%, 100% 88%);
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__wing {
+  align-self: stretch;
+}
+
+.ui-wc3-panel--carved .wc3-carved-vine {
+  position: absolute;
+  z-index: 2;
+  inset-block-start: 50%;
+  inset-inline-start: 7%;
+  inline-size: clamp(2.4rem, 8cqi, 4.5rem);
+  block-size: clamp(1.6rem, 4cqi, 2.4rem);
+  opacity: calc(var(--ui-ornament-opacity) * 0.72);
+  transform: translateY(-50%);
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__wing--right .wc3-carved-vine {
+  inset-inline: auto 7%;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__wing::before,
+.ui-wc3-panel--carved .ui-panel-cap__wing::after {
+  content: "";
+  position: absolute;
+  inset-inline: 8% -0.15rem;
+  inset-block-start: 50%;
+  block-size: clamp(0.48rem, 1.5cqi, 0.8rem);
+  border: 1px solid #21150e;
+  background:
+    linear-gradient(180deg, rgba(216, 165, 87, 0.28), transparent 28%),
+    repeating-linear-gradient(96deg, #5d4029 0 1.5rem, #39251a 1.55rem 1.75rem, #6a4a2f 1.8rem 3rem);
+  box-shadow: inset 0 -3px 0 rgba(25, 14, 9, 0.5), 0 2px 2px #1a100b;
+  transform: translateY(-50%);
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__wing::after {
+  inset-inline: 22% 8%;
+  block-size: 2px;
+  border: 0;
+  background: rgba(191, 153, 82, 0.28);
+  box-shadow: none;
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__wing--right::before {
+  inset-inline: -0.15rem 8%;
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__wing--right::after {
+  inset-inline: 8% 22%;
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__title {
+  min-inline-size: clamp(6.5rem, 25cqi, 13.5rem);
+  padding: clamp(0.8rem, 2.1cqi, 1.05rem) clamp(1rem, 3cqi, 1.75rem);
+  border: 2px solid #25251f;
+  outline: 1px solid #9a7647;
+  outline-offset: -5px;
+  background: var(--wc3-stone-grain);
+  clip-path: polygon(8% 0, 92% 0, 100% 28%, 96% 76%, 84% 100%, 16% 100%, 4% 76%, 0 28%);
+  box-shadow: inset 0 4px 0 rgba(229, 218, 171, 0.18), inset 0 -5px 0 rgba(17, 18, 15, 0.48), 0 0 0 4px #372519, 0 5px 8px #160f0a;
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__title::before,
+.ui-wc3-panel--carved .ui-panel-cap__title::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 50%;
+  inline-size: 0.55rem;
+  block-size: 0.55rem;
+  border: 1px solid #221b11;
+  background: var(--ui-metal);
+  transform: translateY(-50%) rotate(45deg);
+  box-shadow: inset 1px 1px 0 var(--ui-metal-light);
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__title::before {
+  inset-inline-start: 0.7rem;
+}
+
+.ui-wc3-panel--carved .ui-panel-cap__title::after {
+  inset-inline-end: 0.7rem;
+}
+
+.ui-wc3-panel--carved.ui-panel-cap--ornament-only .ui-panel-cap__title {
+  min-inline-size: clamp(4.25rem, 12cqi, 6.2rem);
+}
+
+.ui-wc3-panel--carved.ui-panel-cap--ornament-only .ui-panel-cap__title span::before {
+  content: "";
+  display: block;
+  inline-size: 1.15rem;
+  block-size: 1.15rem;
+  margin-inline: auto;
+  border: 2px solid #9dac57;
+  border-radius: 50% 0 50% 50%;
+  transform: rotate(-45deg);
+  box-shadow: inset 0 0 0 3px #3f4830, 0 1px 0 #16180f;
+}
+
+.ui-wc3-panel--carved.ui-panel-cap--footer {
+  --panel-cap-height: clamp(2.2rem, 6cqi, 3.35rem);
+}
+
+.ui-wc3-panel--carved.ui-panel-cap--footer .ui-panel-cap__surface {
+  display: block;
+  min-block-size: var(--panel-cap-height);
+  clip-path: polygon(1.2% 0, 98.8% 0, 100% 32%, calc(100% - 0.8rem) 100%, 60% 88%, 50% 100%, 40% 88%, 0.8rem 100%, 0 32%);
+}
+
+.ui-wc3-panel--carved .wc3-carved-footer-mark {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  inline-size: clamp(2.4rem, 7cqi, 4rem);
+  block-size: clamp(1.15rem, 3cqi, 1.7rem);
+  border: 1px solid #27281f;
+  outline: 1px solid rgba(172, 137, 75, 0.65);
+  outline-offset: -4px;
+  background: var(--wc3-stone-grain);
+  clip-path: polygon(14% 0, 86% 0, 100% 50%, 76% 100%, 24% 100%, 0 50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Minimal trim ----------------------------------------------------------- */
+.ui-wc3-panel--minimal {
+  --panel-cap-height: clamp(2rem, 5cqi, 2.85rem);
+  --ui-seam-depth: 0.38rem;
+}
+
+.ui-wc3-panel--minimal .ui-panel-cap__surface {
+  grid-template-columns: minmax(1.4rem, 1fr) auto minmax(1.4rem, 1fr);
+}
+
+.ui-wc3-panel--minimal .ui-panel-cap__wing::before,
+.ui-wc3-panel--minimal .ui-panel-cap__wing::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: 50%;
+  block-size: 1px;
+  background: linear-gradient(90deg, transparent, #6c7a42 22%, #9a7c45 55%, #3e4b2c 100%);
+}
+
+.ui-wc3-panel--minimal .ui-panel-cap__wing::after {
+  inset-inline: 16% 5%;
+  inset-block-start: calc(50% + 4px);
+  background: linear-gradient(90deg, transparent, #33271b 35%, #75623c);
+}
+
+.ui-wc3-panel--minimal .ui-panel-cap__wing--right::before,
+.ui-wc3-panel--minimal .ui-panel-cap__wing--right::after {
+  transform: scaleX(-1);
+}
+
+.ui-wc3-panel--minimal .ui-panel-cap__title {
+  min-inline-size: clamp(4rem, 17cqi, 8rem);
+  padding: 0.48rem clamp(0.65rem, 2.2cqi, 1.15rem) 0.43rem;
+  border-block: 1px solid #846c42;
+  background: linear-gradient(90deg, transparent, rgba(49, 38, 27, 0.96) 12%, rgba(49, 38, 27, 0.96) 88%, transparent);
+  font-size: clamp(0.62rem, 1.8cqi, 0.84rem);
+  letter-spacing: 0.2em;
+}
+
+.ui-wc3-panel--minimal .ui-panel-cap__title::before,
+.ui-wc3-panel--minimal .ui-panel-cap__title::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 50%;
+  inline-size: 0.46rem;
+  block-size: 0.46rem;
+  border: 1px solid #9c8551;
+  background: #3f4b2c;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.ui-wc3-panel--minimal .ui-panel-cap__title::before {
+  inset-inline-start: 0;
+}
+
+.ui-wc3-panel--minimal .ui-panel-cap__title::after {
+  inset-inline-end: 0;
+}
+
+.ui-wc3-panel--minimal.ui-panel-cap--ornament-only .ui-panel-cap__title {
+  min-inline-size: clamp(2rem, 5cqi, 2.75rem);
+}
+
+.ui-wc3-panel--minimal.ui-panel-cap--footer {
+  --panel-cap-height: 1.2rem;
+}
+
+.ui-wc3-panel--minimal.ui-panel-cap--footer .ui-panel-cap__surface {
+  display: block;
+  min-block-size: 1.2rem;
+}
+
+.ui-wc3-panel--minimal.ui-panel-cap--footer .ui-panel-cap__surface::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0.5rem;
+  inset-block-start: 45%;
+  block-size: 1px;
+  background: linear-gradient(90deg, transparent, #3c482c 14%, #987843 50%, #3c482c 86%, transparent);
+}
+
+.ui-wc3-panel--minimal.ui-panel-cap--footer .ui-panel-cap__surface::after {
+  content: "";
+  position: absolute;
+  inset-block-start: calc(45% - 3px);
+  inset-inline-start: 50%;
+  inline-size: 7px;
+  block-size: 7px;
+  border: 1px solid #8f7849;
+  background: #364227;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+@container (max-width: 420px) {
+  .ui-wc3-panel--restrained .ui-panel-cap__wing::after,
+  .ui-wc3-panel--carved .ui-panel-cap__wing::after {
+    display: none;
+  }
+
+  .ui-wc3-panel--restrained .wc3-end-sprig {
+    inline-size: 3.25rem;
+  }
+
+  .ui-wc3-panel--carved .ui-panel-cap__surface {
+    clip-path: polygon(0.55rem 0, calc(100% - 0.55rem) 0, 100% 28%, 98% 78%, calc(100% - 0.7rem) 100%, 0.7rem 100%, 2% 78%, 0 28%);
+  }
+
+  .ui-wc3-panel--carved .ui-panel-cap__title {
+    min-inline-size: 7rem;
+    padding-inline: 1rem;
+  }
+
+  .ui-wc3-panel--carved .ui-panel-cap__surface::before,
+  .ui-wc3-panel--carved .ui-panel-cap__surface::after {
+    display: none;
+  }
+}
+</style>
+<div class="ui-component theme-warcraft3-nature ui-panel-cap ui-panel-cap--footer ui-wc3-panel--minimal" data-ui-component="panel-footer" data-variant="minimal" data-motion="on">
+  <div class="ui-panel-cap__surface" aria-hidden="true"></div>
+</div>
+<style data-ui-hosted-shell>
+  :root {
+    color-scheme: normal !important;
+    background: transparent !important;
+  }
+
+  html,
+  body {
+    inline-size: 100%;
+    block-size: 100%;
+    min-inline-size: 0;
+    min-block-size: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    overflow: hidden;
+  }
+
+  body > .ui-component {
+    inline-size: 100%;
+    block-size: 100vh;
+    min-block-size: 100vh;
+    max-block-size: 100vh;
+  }
+
+  body > .ui-panel-cap {
+    --panel-cap-height: 100vh !important;
+  }
+
+  body > .ui-divider,
+  body > .ui-status-strip {
+    min-block-size: 100vh !important;
+  }
+</style>
+</body>
+</html>

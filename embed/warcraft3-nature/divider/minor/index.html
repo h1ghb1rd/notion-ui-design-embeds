@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en" data-ui-hosted-embed>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="transparent">
+  <title>Minor divider</title>
+</head>
+<body data-theme="warcraft3-nature" data-component-id="divider/minor" data-recommended-height="32">
+<!-- Generated from src/themes/warcraft3-nature/fragments/divider/minor.html. Edit source files, then run npm run build. -->
+<style>
+:root { color-scheme: dark; }
+html, body { margin: 0; min-width: 0; background: transparent; overflow-x: hidden; }
+body { padding: 0; }
+:where(.ui-component) {
+  box-sizing: border-box;
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 100%;
+  color: var(--ui-text, currentColor);
+  font-family: var(--ui-font, ui-serif, Georgia, serif);
+  line-height: 1.2;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+:where(.ui-component),
+:where(.ui-component) *,
+:where(.ui-component) *::before,
+:where(.ui-component) *::after {
+  box-sizing: border-box;
+}
+
+:where(.ui-component svg) {
+  display: block;
+  max-inline-size: 100%;
+}
+
+:where(.ui-component [aria-hidden="true"]) {
+  pointer-events: none;
+  user-select: none;
+}
+
+.ui-sr-only {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
+:where(.ui-component) {
+  container-type: inline-size;
+}
+
+.ui-mobile-only {
+  display: none;
+}
+
+@container (max-width: 420px) {
+  .ui-desktop-ornament {
+    display: none !important;
+  }
+
+  .ui-mobile-only {
+    display: block;
+  }
+}
+
+@supports not (container-type: inline-size) {
+  @media (max-width: 520px) {
+    .ui-desktop-ornament {
+      display: none !important;
+    }
+
+    .ui-mobile-only {
+      display: block;
+    }
+  }
+}
+
+
+
+:where(.ui-component) {
+  --ui-motion-enabled: 1;
+}
+
+:where(.ui-component[data-motion="off"]) *,
+:where(.ui-component[data-motion="off"]) *::before,
+:where(.ui-component[data-motion="off"]) *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(.ui-component) *,
+  :where(.ui-component) *::before,
+  :where(.ui-component) *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+
+.theme-warcraft3-nature {
+  color-scheme: dark;
+
+  /* Semantic UI surfaces */
+  --ui-bg: #171613;
+  --ui-panel: #35291f;
+  --ui-native-surface: #3c3028;
+  --ui-native-surface-edge: #5d4938;
+  --ui-border-dark: #17110d;
+  --ui-border-mid: #493326;
+  --ui-border-light: #8a6742;
+  --ui-accent: #829649;
+  --ui-accent-muted: #4e6034;
+  --ui-metal: #977343;
+  --ui-metal-light: #c09a5b;
+  --ui-stone: #626052;
+  --ui-stone-dark: #292a24;
+  --ui-moss: #566238;
+  --ui-shadow: rgba(9, 7, 5, 0.78);
+  --ui-highlight: rgba(223, 193, 126, 0.32);
+  --ui-text: #e6ddc5;
+  --ui-text-muted: #b9ad90;
+
+  /* Shape and ornament controls */
+  --ui-radius: 0.2rem;
+  --ui-bevel-size: 3px;
+  --ui-ornament-opacity: 0.92;
+  --ui-leaf-density: 1;
+  --ui-seam-depth: 0.6rem;
+  --ui-shadow-strength: 0.7;
+
+  --ui-font: Georgia, "Times New Roman", serif;
+  --ui-display-font: Georgia, "Times New Roman", serif;
+}
+
+
+
+.theme-warcraft3-nature {
+  --wc3-wood-grain:
+    radial-gradient(ellipse at 12% 40%, rgba(217, 173, 96, 0.1) 0 1px, transparent 2px),
+    radial-gradient(ellipse at 78% 70%, rgba(10, 7, 4, 0.22) 0 1px, transparent 2px),
+    repeating-linear-gradient(97deg, transparent 0 17px, rgba(15, 9, 5, 0.11) 18px 19px, transparent 21px 34px),
+    linear-gradient(180deg, #60442e 0%, #3f2b20 47%, #2b1d17 100%);
+  --wc3-stone-grain:
+    radial-gradient(circle at 30% 35%, rgba(220, 211, 174, 0.14) 0 1px, transparent 2px),
+    radial-gradient(circle at 72% 68%, rgba(8, 9, 7, 0.2) 0 1px, transparent 2px),
+    linear-gradient(145deg, #747263, #44463c 52%, #282a25);
+}
+
+.theme-warcraft3-nature .wc3-svg-leaf {
+  fill: var(--ui-accent-muted);
+  stroke: #26301c;
+  stroke-width: 1.4;
+}
+
+.theme-warcraft3-nature .wc3-svg-leaf--lit {
+  fill: var(--ui-accent);
+  stroke: #35411f;
+}
+
+.theme-warcraft3-nature .wc3-svg-vein {
+  fill: none;
+  stroke: rgba(218, 208, 154, 0.42);
+  stroke-linecap: round;
+  stroke-width: 0.8;
+}
+
+.theme-warcraft3-nature .wc3-svg-root {
+  fill: none;
+  stroke: #765439;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-warcraft3-nature .wc3-svg-root-shadow {
+  fill: none;
+  stroke: #241711;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-warcraft3-nature .wc3-svg-metal {
+  fill: var(--ui-metal);
+  stroke: #382818;
+  stroke-width: 1.2;
+}
+
+.theme-warcraft3-nature .wc3-svg-stone {
+  fill: var(--ui-stone);
+  stroke: var(--ui-stone-dark);
+  stroke-width: 1.5;
+}
+
+
+
+.ui-divider {
+  position: relative;
+  display: grid;
+  place-items: center;
+  inline-size: 100%;
+}
+
+.ui-divider--major {
+  min-block-size: clamp(2.2rem, 8cqi, 3.75rem);
+}
+
+.ui-divider--minor {
+  min-block-size: clamp(1.15rem, 4cqi, 1.9rem);
+}
+
+.ui-divider--micro {
+  min-block-size: 0.75rem;
+}
+
+.ui-divider__art {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+
+
+.theme-warcraft3-nature.ui-divider {
+  color: var(--ui-text-muted);
+  filter: drop-shadow(0 2px 2px rgba(10, 7, 5, 0.52));
+}
+
+.theme-warcraft3-nature .ui-divider__rail {
+  position: absolute;
+  inset-block-start: 50%;
+  block-size: 3px;
+  border-block: 1px solid #231710;
+  background: linear-gradient(180deg, #805b38, #3f2b1d 58%, #1f1510);
+  transform: translateY(-50%);
+}
+
+.theme-warcraft3-nature .ui-divider__rail--left {
+  inset-inline: clamp(0.25rem, 2cqi, 1rem) calc(50% + var(--divider-center-gap));
+}
+
+.theme-warcraft3-nature .ui-divider__rail--right {
+  inset-inline: calc(50% + var(--divider-center-gap)) clamp(0.25rem, 2cqi, 1rem);
+}
+
+.theme-warcraft3-nature .ui-divider__rail::after {
+  content: "";
+  position: absolute;
+  inset-inline: 12% 4%;
+  inset-block-start: -4px;
+  block-size: 1px;
+  background: linear-gradient(90deg, transparent, #566a37 25%, #7d8448 72%, transparent);
+}
+
+.theme-warcraft3-nature .ui-divider__rail--right::after {
+  transform: scaleX(-1);
+}
+
+.theme-warcraft3-nature .ui-divider__center {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+
+.theme-warcraft3-nature.ui-divider--major {
+  --divider-center-gap: clamp(2.8rem, 8cqi, 4.75rem);
+}
+
+.theme-warcraft3-nature.ui-divider--major .ui-divider__rail {
+  block-size: clamp(0.35rem, 1.2cqi, 0.6rem);
+  border: 1px solid #1f150e;
+  background:
+    linear-gradient(180deg, rgba(212, 164, 87, 0.25), transparent 36%),
+    repeating-linear-gradient(98deg, #68472e 0 1.4rem, #3e2a1f 1.5rem 1.7rem, #5b3e2a 1.8rem 2.8rem);
+  box-shadow: inset 0 -3px 0 rgba(27, 16, 10, 0.5);
+}
+
+.theme-warcraft3-nature.ui-divider--major .ui-divider__center {
+  inline-size: clamp(4.6rem, 14cqi, 7rem);
+  block-size: clamp(2.6rem, 7cqi, 3.8rem);
+}
+
+.theme-warcraft3-nature.ui-divider--major .ui-divider__center::before {
+  content: "";
+  position: absolute;
+  inset: 10% 20%;
+  border: 1px solid #22231e;
+  outline: 1px solid #917044;
+  outline-offset: -4px;
+  background: var(--wc3-stone-grain);
+  clip-path: polygon(18% 0, 82% 0, 100% 50%, 82% 100%, 18% 100%, 0 50%);
+  box-shadow: inset 0 3px 0 rgba(223, 215, 177, 0.16), 0 3px 4px #17100c;
+}
+
+.theme-warcraft3-nature .wc3-divider-rune {
+  position: relative;
+  z-index: 1;
+  inline-size: clamp(1.05rem, 3cqi, 1.5rem);
+  block-size: clamp(1.05rem, 3cqi, 1.5rem);
+  opacity: 0.78;
+}
+
+.theme-warcraft3-nature.ui-divider--minor {
+  --divider-center-gap: clamp(1.2rem, 4cqi, 2rem);
+}
+
+.theme-warcraft3-nature.ui-divider--minor .ui-divider__rail {
+  block-size: 2px;
+}
+
+.theme-warcraft3-nature.ui-divider--minor .ui-divider__center {
+  inline-size: clamp(1.9rem, 6cqi, 3rem);
+  block-size: clamp(1rem, 3cqi, 1.5rem);
+  border-inline: 1px solid #8c7042;
+  background: linear-gradient(90deg, transparent, #3e4b2b 28% 72%, transparent);
+  clip-path: polygon(0 50%, 24% 0, 76% 0, 100% 50%, 76% 100%, 24% 100%);
+}
+
+.theme-warcraft3-nature.ui-divider--minor .ui-divider__center::before {
+  content: "";
+  inline-size: 0.48rem;
+  block-size: 0.48rem;
+  border: 1px solid #a2854e;
+  background: #2c3522;
+  transform: rotate(45deg);
+}
+
+.theme-warcraft3-nature.ui-divider--micro {
+  --divider-center-gap: 0.65rem;
+}
+
+.theme-warcraft3-nature.ui-divider--micro .ui-divider__rail {
+  block-size: 1px;
+  border: 0;
+  background: linear-gradient(90deg, transparent, rgba(117, 102, 67, 0.62));
+}
+
+.theme-warcraft3-nature.ui-divider--micro .ui-divider__rail--right {
+  background: linear-gradient(90deg, rgba(117, 102, 67, 0.62), transparent);
+}
+
+.theme-warcraft3-nature.ui-divider--micro .ui-divider__center {
+  inline-size: 0.42rem;
+  block-size: 0.42rem;
+  border: 1px solid rgba(136, 151, 77, 0.72);
+  transform: rotate(45deg);
+}
+
+@container (max-width: 420px) {
+  .theme-warcraft3-nature.ui-divider--major {
+    --divider-center-gap: 2.75rem;
+  }
+
+  .theme-warcraft3-nature .ui-divider__rail::after {
+    display: none;
+  }
+}
+</style>
+<div class="ui-component theme-warcraft3-nature ui-divider ui-divider--minor" data-ui-component="divider" data-variant="minor">
+  <span class="ui-divider__rail ui-divider__rail--left" aria-hidden="true"></span>
+  <span class="ui-divider__center" aria-hidden="true"></span>
+  <span class="ui-divider__rail ui-divider__rail--right" aria-hidden="true"></span>
+  <span class="ui-sr-only">Section divider</span>
+</div>
+<style data-ui-hosted-shell>
+  :root {
+    color-scheme: normal !important;
+    background: transparent !important;
+  }
+
+  html,
+  body {
+    inline-size: 100%;
+    block-size: 100%;
+    min-inline-size: 0;
+    min-block-size: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    overflow: hidden;
+  }
+
+  body > .ui-component {
+    inline-size: 100%;
+    block-size: 100vh;
+    min-block-size: 100vh;
+    max-block-size: 100vh;
+  }
+
+  body > .ui-panel-cap {
+    --panel-cap-height: 100vh !important;
+  }
+
+  body > .ui-divider,
+  body > .ui-status-strip {
+    min-block-size: 100vh !important;
+  }
+</style>
+</body>
+</html>
