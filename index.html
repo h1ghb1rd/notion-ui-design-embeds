@@ -5,23 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Notion UI Design Embeds</title>
   <style>
-    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    :root {
+      color-scheme: light dark;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      --catalogue-page: light-dark(#f7f6f3, #191919);
+      --catalogue-text: light-dark(#27231f, #e8e5dc);
+      --catalogue-muted: light-dark(#5f5952, #aaa69b);
+      --catalogue-kicker: light-dark(#756f68, #a9a49a);
+      --catalogue-link: light-dark(#3f6b50, #91a96c);
+    }
     * { box-sizing: border-box; }
-    body { max-width: 960px; margin: 0 auto; padding: clamp(1rem, 4vw, 3rem); color: #27231f; background: #f7f6f3; }
+    body { max-width: 960px; margin: 0 auto; padding: clamp(1rem, 4vw, 3rem); color: var(--catalogue-text); background: var(--catalogue-page); }
     header { margin-block-end: 2rem; }
     h1 { margin-block-end: 0.4rem; font-size: clamp(1.7rem, 4vw, 2.6rem); }
-    h2 { margin-block: 2rem 0.8rem; font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: #756f68; }
-    p { max-width: 68ch; color: #5f5952; }
+    h2 { margin-block: 2rem 0.8rem; font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--catalogue-kicker); }
+    p { max-width: 68ch; color: var(--catalogue-muted); }
     .specimen { margin-block: 0.65rem; }
     .specimen__meta { display: flex; justify-content: space-between; gap: 1rem; margin-block-end: 0.3rem; font-size: 0.82rem; }
-    .specimen__meta a { color: #3f6b50; }
+    .specimen__meta a { color: var(--catalogue-link); }
     iframe { display: block; inline-size: 100%; border: 0; background: transparent; overflow: hidden; }
   </style>
 </head>
 <body>
   <header>
     <h1>Notion UI Design Embeds</h1>
-    <p>Generated responsive component pages for external Notion embeds. Source revision: <code>1b0fee2ac9e986235c2d60460926402f0e5f5ef6</code>.</p>
+    <p>Generated responsive component pages for external Notion embeds. Source revision: <code>0649a64f4d22375eecf6921131aa78bd1497814f</code>.</p>
   </header>
   <section><h2>panel-header</h2>
       <article class="specimen">

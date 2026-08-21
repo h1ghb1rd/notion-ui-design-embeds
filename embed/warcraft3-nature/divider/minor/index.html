@@ -15,7 +15,7 @@
 >
 <!-- Generated from src/themes/warcraft3-nature/fragments/divider/minor.html. Edit source files, then run npm run build. -->
 <style>
-:root { color-scheme: dark; }
+:root { color-scheme: light dark; }
 html, body { margin: 0; min-width: 0; background: transparent; overflow-x: hidden; }
 body { padding: 0; }
 :where(.ui-component) {
@@ -118,27 +118,32 @@ body { padding: 0; }
 
 
 .theme-warcraft3-nature {
-  color-scheme: dark;
+  /*
+   * The generated document advertises both schemes. Components inherit the
+   * iframe's resolved scheme so light-dark() follows Notion even when its
+   * manual appearance differs from the operating-system setting.
+   */
+  color-scheme: inherit;
 
   /* Semantic UI surfaces */
-  --ui-bg: #171613;
-  --ui-panel: #35291f;
-  --ui-native-surface: #3c3028;
-  --ui-native-surface-edge: #5d4938;
-  --ui-border-dark: #17110d;
-  --ui-border-mid: #493326;
-  --ui-border-light: #8a6742;
-  --ui-accent: #829649;
-  --ui-accent-muted: #4e6034;
-  --ui-metal: #977343;
-  --ui-metal-light: #c09a5b;
-  --ui-stone: #626052;
-  --ui-stone-dark: #292a24;
-  --ui-moss: #566238;
-  --ui-shadow: rgba(9, 7, 5, 0.78);
-  --ui-highlight: rgba(223, 193, 126, 0.32);
-  --ui-text: #e6ddc5;
-  --ui-text-muted: #b9ad90;
+  --ui-bg: light-dark(#f7f4ef, #171613);
+  --ui-panel: light-dark(#493425, #35291f);
+  --ui-native-surface: light-dark(#f5ede9, #45362d);
+  --ui-native-surface-edge: light-dark(#dac8bd, #6a5446);
+  --ui-border-dark: light-dark(#2b1c14, #17110d);
+  --ui-border-mid: light-dark(#60432e, #493326);
+  --ui-border-light: light-dark(#a17b4d, #8a6742);
+  --ui-accent: light-dark(#70823f, #829649);
+  --ui-accent-muted: light-dark(#42562f, #4e6034);
+  --ui-metal: light-dark(#8b6638, #977343);
+  --ui-metal-light: light-dark(#b78c4b, #c09a5b);
+  --ui-stone: light-dark(#6c6959, #626052);
+  --ui-stone-dark: light-dark(#33332c, #292a24);
+  --ui-moss: light-dark(#46572f, #566238);
+  --ui-shadow: light-dark(rgba(32, 22, 16, 0.48), rgba(9, 7, 5, 0.78));
+  --ui-highlight: light-dark(rgba(255, 224, 156, 0.26), rgba(223, 193, 126, 0.32));
+  --ui-text: light-dark(#f4ead3, #e6ddc5);
+  --ui-text-muted: light-dark(#d4c6a8, #b9ad90);
 
   /* Shape and ornament controls */
   --ui-radius: 0.2rem;
@@ -151,7 +156,6 @@ body { padding: 0; }
   --ui-font: Georgia, "Times New Roman", serif;
   --ui-display-font: Georgia, "Times New Roman", serif;
 }
-
 
 
 .theme-warcraft3-nature {
@@ -383,7 +387,7 @@ body { padding: 0; }
 <style data-ui-hosted-shell>
   :root {
     --ui-artwork-height: 32px;
-    color-scheme: normal !important;
+    color-scheme: light dark !important;
     background: transparent !important;
   }
 
